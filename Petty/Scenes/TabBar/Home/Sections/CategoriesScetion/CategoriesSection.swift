@@ -32,20 +32,20 @@ class CategoriesSection: SectionsLayout {
         layoutEnvironment: NSCollectionLayoutEnvironment
     ) -> NSCollectionLayoutSection {
         // Item
-        let itemSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1.0), heightDimension: .fractionalHeight(1.0))
+        let itemSize = NSCollectionLayoutSize(widthDimension: .absolute(54), heightDimension: .fractionalHeight(1))
         let item = NSCollectionLayoutItem(layoutSize: itemSize)
         
         // Group
-        let groupSize = NSCollectionLayoutSize(widthDimension: .absolute(58), heightDimension: .absolute(58))
-        let group = NSCollectionLayoutGroup.horizontal(layoutSize: groupSize, subitems: [item])
+        let groupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1), heightDimension: .absolute(64))
+        let group = NSCollectionLayoutGroup.horizontal(layoutSize: groupSize, subitem: item, count: 4)
+        group.interItemSpacing = .fixed(32)
         
         let header = createHeader()
-
+        
         // Section
         let section = NSCollectionLayoutSection(group: group)
-        section.interGroupSpacing = 39
+        section.interGroupSpacing = 20
         section.contentInsets = .init(top: 0, leading: 20, bottom: 20, trailing: 20)
-        section.orthogonalScrollingBehavior = .groupPaging
         section.boundarySupplementaryItems = [header]
         return section
         
