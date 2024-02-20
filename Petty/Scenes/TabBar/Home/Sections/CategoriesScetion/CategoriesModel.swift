@@ -10,12 +10,3 @@ import Foundation
 struct CategoriesModel: Codable {
     let image: String
 }
-
-extension CategoriesModel {
-    static let mockData: [CategoriesModel] = [
-        .init(image: "categories/dog"),
-        .init(image: "categories/cat"),
-        .init(image: "categories/bird"),
-        .init(image: "categories/fish")
-    ]
-}

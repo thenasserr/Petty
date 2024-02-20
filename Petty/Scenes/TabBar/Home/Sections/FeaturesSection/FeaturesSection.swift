@@ -7,10 +7,21 @@
 
 import UIKit
 
+protocol FeaturesSectionDelegate: AnyObject {
+    func featuresSection(_ section: FeaturesSection, item: FeaturesModel)
+}
+
 class FeaturesSection: SectionsLayout {
     typealias ItemsType = FeaturesModel
     
     var items: [FeaturesModel] = []
+    
+    weak var delegate: FeaturesSectionDelegate?
+    
+    init(items: [ItemsType], delegate: FeaturesSectionDelegate) {
+        self.items = items
+        self.delegate = delegate
+    }
     
     func numberOfItems() -> Int {
         items.count
@@ -46,7 +57,8 @@ class FeaturesSection: SectionsLayout {
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-
+        let item = items[indexPath.row]
+        self.delegate?.featuresSection(self, item: item)
     }
     
     func collectionView(

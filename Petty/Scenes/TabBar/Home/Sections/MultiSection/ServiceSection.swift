@@ -7,10 +7,22 @@
 
 import UIKit
 
+protocol ServiceSectionDelegate: AnyObject {
+    func serviceSection(_ section: ServiceSection, item: ServiceModel)
+}
+
 class ServiceSection: SectionsLayout {
     typealias ItemsType = ServiceModel
     
     var items: [ServiceModel] = []
+    
+    weak var delegate: ServiceSectionDelegate?
+    
+    init(items: [ServiceModel], delegate: ServiceSectionDelegate?, headerTitle: String?) {
+        self.items = items
+        self.delegate = delegate
+        self.headerTitle = headerTitle
+    }
     
     var headerTitle: String?
     
@@ -66,7 +78,8 @@ class ServiceSection: SectionsLayout {
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-
+        let item = items[indexPath.row]
+        self.delegate?.serviceSection(self, item: item)
     }
     
     func collectionView(

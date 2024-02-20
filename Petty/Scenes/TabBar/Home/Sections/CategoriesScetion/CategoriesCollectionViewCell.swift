@@ -17,6 +17,12 @@ class CategoriesCollectionViewCell: UICollectionViewCell {
     /// Sets up the cell with the provided category information.
     func setup(category: CategoriesModel) {
         image.image = UIImage(named: category.image)
+        setupUI()
+    }
+    
+    private func setupUI() {
+        image.clipsToBounds = true
+        image.contentMode = .scaleAspectFill
     }
 
 }

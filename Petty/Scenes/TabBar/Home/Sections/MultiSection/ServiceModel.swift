@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct ServiceModel {
+struct ServiceModel: Codable {
     let image: String
     let title: String
     let subtitle: String

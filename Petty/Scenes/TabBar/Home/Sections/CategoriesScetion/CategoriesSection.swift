@@ -7,12 +7,21 @@
 
 import UIKit
 
+protocol CategoriesSectionDelegate: AnyObject {
+    func categoriesSection(_ section: CategoriesSection, item: CategoriesModel)
+}
+
 class CategoriesSection: SectionsLayout {
     typealias ItemsType = CategoriesModel
     
     var items: [CategoriesModel] = []
     
-    var isSelectedIndex: Int?
+    weak var delegate: CategoriesSectionDelegate?
+    
+    init(items: [ItemsType], delegate: CategoriesSectionDelegate?) {
+        self.items = items
+        self.delegate = delegate
+    }
     
     func numberOfItems() -> Int {
         items.count
@@ -39,6 +48,7 @@ class CategoriesSection: SectionsLayout {
         section.orthogonalScrollingBehavior = .groupPaging
         section.boundarySupplementaryItems = [header]
         return section
+        
     }
     
     private func createHeader() -> NSCollectionLayoutBoundarySupplementaryItem {
@@ -66,8 +76,8 @@ class CategoriesSection: SectionsLayout {
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        isSelectedIndex = indexPath.item
-        collectionView.reloadData()
+        let item = items[indexPath.row]
+        self.delegate?.categoriesSection(self, item: item)
     }
     
     func collectionView(
