@@ -83,6 +83,7 @@ class CategoriesSection: SectionsLayout {
             return UICollectionReusableView()
         }
         header.setupHeaderTitle(title: "Categories")
+        header.setupHeaderButton(buttonTitle: "All", image: .right)
         return header
     }
     
@@ -97,6 +98,14 @@ class CategoriesSection: SectionsLayout {
     }
     
     func registerDecorationView(layout: UICollectionViewLayout) {
+        
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didHighlightItemAt indexPath: IndexPath) {
+        
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didUnhighlightItemAt indexPath: IndexPath) {
         
     }
 }

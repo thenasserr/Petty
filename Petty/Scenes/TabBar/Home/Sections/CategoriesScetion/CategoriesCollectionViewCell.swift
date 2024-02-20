@@ -9,12 +9,12 @@ import UIKit
 
 class CategoriesCollectionViewCell: UICollectionViewCell {
 
+    // MARK: - IBOutlets
     @IBOutlet weak var image: UIImageView!
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-    }
     
+    // MARK: - Public Methods
+        
+    /// Sets up the cell with the provided category information.
     func setup(category: CategoriesModel) {
         image.image = UIImage(named: category.image)
     }

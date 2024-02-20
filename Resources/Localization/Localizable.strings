@@ -6,4 +6,5 @@
   
 */
 
-"home" = "Home";
+"home.title" = "Home";
+"home.searchplaceholder" = "Search...";
