@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D653A48C2B8411F80016F368 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D653A48A2B8411F80016F368 /* ViewController.swift */; };
-		D653A48D2B8411F80016F368 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D653A48B2B8411F80016F368 /* ViewController.xib */; };
+		D653A48C2B8411F80016F368 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D653A48A2B8411F80016F368 /* HomeViewController.swift */; };
+		D653A48D2B8411F80016F368 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D653A48B2B8411F80016F368 /* HomeViewController.xib */; };
 		D653A4912B8413600016F368 /* SearchView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D653A48F2B8413600016F368 /* SearchView.xib */; };
 		D653A4922B8413600016F368 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D653A4902B8413600016F368 /* SearchView.swift */; };
 		D653A4A72B841AD60016F368 /* Poppins-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D653A4A82B841AD60016F368 /* Poppins-Bold.ttf */; };
@@ -67,8 +67,8 @@
 
 /* Begin PBXFileReference section */
 		D653A4812B840C3B0016F368 /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
-		D653A48A2B8411F80016F368 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		D653A48B2B8411F80016F368 /* ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
+		D653A48A2B8411F80016F368 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		D653A48B2B8411F80016F368 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 		D653A48F2B8413600016F368 /* SearchView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchView.xib; sourceTree = "<group>"; };
 		D653A4902B8413600016F368 /* SearchView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
 		D653A4A82B841AD60016F368 /* Poppins-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Bold.ttf"; sourceTree = "<group>"; };
@@ -322,8 +322,8 @@
 			children = (
 				D66085702B83891A0071B562 /* Factory */,
 				D660856F2B8389150071B562 /* Sections */,
-				D653A48A2B8411F80016F368 /* ViewController.swift */,
-				D653A48B2B8411F80016F368 /* ViewController.xib */,
+				D653A48A2B8411F80016F368 /* HomeViewController.swift */,
+				D653A48B2B8411F80016F368 /* HomeViewController.xib */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -362,7 +362,7 @@
 			children = (
 				D660858C2B83A2820071B562 /* MultiSection */,
 				D660857D2B839AEA0071B562 /* CategoriesScetion */,
-				D66085732B83893D0071B562 /* HeaderSection */,
+				D66085732B83893D0071B562 /* FeaturesSection */,
 			);
 			path = Sections;
 			sourceTree = "<group>";
@@ -374,7 +374,7 @@
 			path = Factory;
 			sourceTree = "<group>";
 		};
-		D66085732B83893D0071B562 /* HeaderSection */ = {
+		D66085732B83893D0071B562 /* FeaturesSection */ = {
 			isa = PBXGroup;
 			children = (
 				D66085742B83894C0071B562 /* FeaturesSection.swift */,
@@ -382,7 +382,7 @@
 				D66085782B8389690071B562 /* FeaturesCollectionViewCell.xib */,
 				D660857B2B83897E0071B562 /* FeaturesModel.swift */,
 			);
-			path = HeaderSection;
+			path = FeaturesSection;
 			sourceTree = "<group>";
 		};
 		D660857D2B839AEA0071B562 /* CategoriesScetion */ = {
@@ -546,7 +546,7 @@
 				D653A4912B8413600016F368 /* SearchView.xib in Resources */,
 				D660854E2B83830A0071B562 /* swiftgen.yml in Resources */,
 				D66085532B8383DB0071B562 /* Colors.xcassets in Resources */,
-				D653A48D2B8411F80016F368 /* ViewController.xib in Resources */,
+				D653A48D2B8411F80016F368 /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -623,7 +623,7 @@
 				D653A4922B8413600016F368 /* SearchView.swift in Sources */,
 				D66085572B8385300071B562 /* UICollectionView+Extension.swift in Sources */,
 				D66085802B839B3C0071B562 /* CategoriesCollectionViewCell.swift in Sources */,
-				D653A48C2B8411F80016F368 /* ViewController.swift in Sources */,
+				D653A48C2B8411F80016F368 /* HomeViewController.swift in Sources */,
 				D66085832B839B6C0071B562 /* CategoriesSection.swift in Sources */,
 				D66085942B83A51B0071B562 /* MultiSection.swift in Sources */,
 				D660855A2B8385580071B562 /* UITableView+Extension.swift in Sources */,

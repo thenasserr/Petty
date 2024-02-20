@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class HomeViewController: UIViewController {
 
     @IBOutlet weak var filterButton: UIButton!
     @IBOutlet weak var logoImage: UIImageView!
@@ -27,9 +27,14 @@ class ViewController: UIViewController {
         categorySection.items = CategoriesModel.mockData
         
         let section1 = MultiSection()
+        section1.headerTitle = "Education"
         section1.items = MultiModel.mockData1
         
-        sections = [headerSection, categorySection, section1]
+        let service = MultiSection()
+        service.headerTitle = "Service"
+        service.items = MultiModel.mockData2
+        
+        sections = [headerSection, categorySection, section1, service]
         configureCollectionView()
         collectionView.reloadData()
     }
@@ -71,7 +76,7 @@ class ViewController: UIViewController {
     }
 }
 
-extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource {
+extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSource {
     // MARK: - UICollectionViewDataSource
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         return sections.count
