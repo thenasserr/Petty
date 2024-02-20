@@ -1,0 +1,109 @@
+{
+    "sections": [
+        {
+            "features":
+                    {
+                        "items": [
+                            {
+                                "petImage": "dogs",
+                                "offerTitle": "Discount 20%",
+                                "offerDate": "2/3/2023 - 2/4/2023",
+                                "offerSubtitle": "Apply for all pet"
+                            },
+                            {
+                                "petImage": "dogs",
+                                "offerTitle": "Discount 20%",
+                                "offerDate": "2/3/2023 - 2/4/2023",
+                                "offerSubtitle": "Apply for all pet"
+                            },
+                            {
+                                "petImage": "dogs",
+                                "offerTitle": "Discount 20%",
+                                "offerDate": "2/3/2023 - 2/4/2023",
+                                "offerSubtitle": "Apply for all pet"
+                            },
+                            {
+                                "petImage": "dogs",
+                                "offerTitle": "Discount 20%",
+                                "offerDate": "2/3/2023 - 2/4/2023",
+                                "offerSubtitle": "Apply for all pet"
+                            },
+                            {
+                                "petImage": "dogs",
+                                "offerTitle": "Discount 20%",
+                                "offerDate": "2/3/2023 - 2/4/2023",
+                                "offerSubtitle": "Apply for all pet"
+                            }
+                        ]
+                    }
+                
+        },
+        {
+            "categories":
+                    {
+                        "items": [
+                            {
+                                "image": "categories/dog",
+                                
+                            },
+                            {
+                                "image": "categories/cat",
+                                
+                            },
+                            {
+                                "image": "categories/bird",
+                                
+                            },
+                            {
+                                "image": "categories/fish",
+                                
+                            }
+                        ]
+                    }
+        },
+        {
+            "service":
+                    {
+                        "title": "Educational",
+                        "items": [
+                            {
+                                "image": "image30",
+                                "title": "Health care for your pets",
+                                "subtitle": "service",
+                                "background": "9747FF"
+                                
+                            },
+                            {
+                                "image": "image30",
+                                "title": "Health care for your pets",
+                                "subtitle": "service",
+                                "background": "9747FF"
+                                
+                            }
+                        ]
+                    }
+        },
+        {
+            "service":
+                    {
+                        "title": "Service",
+                        "items": [
+                            {
+                                "image": "service",
+                                "title": "Bathing pets service",
+                                "subtitle": "",
+                                "background": "ABDCFC"
+                                
+                            },
+                            {
+                                "image": "service",
+                                "title": "Play whit pets",
+                                "subtitle": "",
+                                "background": "FBAE9E"
+                                
+                            }
+                        ]
+                    }
+        }
+    ]
+}

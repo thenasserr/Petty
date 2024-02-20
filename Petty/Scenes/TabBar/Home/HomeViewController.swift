@@ -17,27 +17,23 @@ class HomeViewController: UIViewController {
     
     var sections: [any SectionsLayout] = []
     private var headerViewHeight: CGFloat = 0
-
+    let viewModel: HomeViewModel
+    
+    init(viewModel: HomeViewModel) {
+        self.viewModel = viewModel
+        super.init(nibName: nil, bundle: nil)
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
     // MARK: - View Lifecycle
     //
     override func viewDidLoad() {
         super.viewDidLoad()
         configuerUI()
-        let headerSection = FeaturesSection()
-        headerSection.items = FeaturesModel.mockData
-        
-        let categorySection = CategoriesSection()
-        categorySection.items = CategoriesModel.mockData
-        
-        let section1 = ServiceSection()
-        section1.headerTitle = "Education"
-        section1.items = ServiceModel.mockData1
-        
-        let service = ServiceSection()
-        service.headerTitle = "Service"
-        service.items = ServiceModel.mockData2
-        
-        sections = [headerSection, categorySection, section1, service]
+        sections = viewModel.getSections()
         configureCollectionView()
         collectionView.reloadData()
     }

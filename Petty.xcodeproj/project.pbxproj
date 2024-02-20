@@ -19,6 +19,11 @@
 		D653A4B22B841E000016F368 /* HeaderReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D653A4B02B841E000016F368 /* HeaderReusableView.swift */; };
 		D653A4B32B841E000016F368 /* HeaderReusableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D653A4B12B841E000016F368 /* HeaderReusableView.xib */; };
 		D653A4B62B8433320016F368 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D653A4B52B8433320016F368 /* UIColor+Extension.swift */; };
+		D653A4C12B84EDA90016F368 /* HomeFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = D653A4C02B84EDA90016F368 /* HomeFactory.swift */; };
+		D653A4C42B84EE800016F368 /* HomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D653A4C32B84EE800016F368 /* HomeModel.swift */; };
+		D653A4C62B84F0410016F368 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D653A4C52B84F0410016F368 /* HomeViewModel.swift */; };
+		D653A4C82B84F0730016F368 /* Home.json in Resources */ = {isa = PBXBuildFile; fileRef = D653A4C72B84F0730016F368 /* Home.json */; };
+		D653A4CB2B84F1A40016F368 /* +JSONDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D653A4CA2B84F1A40016F368 /* +JSONDecoder.swift */; };
 		D66085112B8378720071B562 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D66085102B8378720071B562 /* AppDelegate.swift */; };
 		D66085132B8378720071B562 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D66085122B8378720071B562 /* SceneDelegate.swift */; };
 		D660851A2B8378740071B562 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D66085192B8378740071B562 /* Assets.xcassets */; };
@@ -78,6 +83,11 @@
 		D653A4B02B841E000016F368 /* HeaderReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderReusableView.swift; sourceTree = "<group>"; };
 		D653A4B12B841E000016F368 /* HeaderReusableView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeaderReusableView.xib; sourceTree = "<group>"; };
 		D653A4B52B8433320016F368 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		D653A4C02B84EDA90016F368 /* HomeFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeFactory.swift; sourceTree = "<group>"; };
+		D653A4C32B84EE800016F368 /* HomeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModel.swift; sourceTree = "<group>"; };
+		D653A4C52B84F0410016F368 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		D653A4C72B84F0730016F368 /* Home.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Home.json; sourceTree = "<group>"; };
+		D653A4CA2B84F1A40016F368 /* +JSONDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "+JSONDecoder.swift"; sourceTree = "<group>"; };
 		D660850D2B8378720071B562 /* Petty.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Petty.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D66085102B8378720071B562 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D66085122B8378720071B562 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -151,6 +161,23 @@
 				D653A4B52B8433320016F368 /* UIColor+Extension.swift */,
 			);
 			path = UIColor;
+			sourceTree = "<group>";
+		};
+		D653A4C22B84EE710016F368 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				D653A4C32B84EE800016F368 /* HomeModel.swift */,
+				D653A4C52B84F0410016F368 /* HomeViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		D653A4C92B84F1960016F368 /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				D653A4CA2B84F1A40016F368 /* +JSONDecoder.swift */,
+			);
+			path = Foundation;
 			sourceTree = "<group>";
 		};
 		D66085042B8378720071B562 = {
@@ -275,6 +302,7 @@
 		D66085542B8385120071B562 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				D653A4C92B84F1960016F368 /* Foundation */,
 				D653A4B42B8433200016F368 /* UIColor */,
 				D66085582B83854E0071B562 /* UITableView */,
 				D66085552B8385210071B562 /* UICollectionView */,
@@ -320,10 +348,12 @@
 		D660855D2B8385E60071B562 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				D653A4C22B84EE710016F368 /* ViewModel */,
 				D66085702B83891A0071B562 /* Factory */,
 				D660856F2B8389150071B562 /* Sections */,
 				D653A48A2B8411F80016F368 /* HomeViewController.swift */,
 				D653A48B2B8411F80016F368 /* HomeViewController.xib */,
+				D653A4C72B84F0730016F368 /* Home.json */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -370,6 +400,7 @@
 		D66085702B83891A0071B562 /* Factory */ = {
 			isa = PBXGroup;
 			children = (
+				D653A4C02B84EDA90016F368 /* HomeFactory.swift */,
 			);
 			path = Factory;
 			sourceTree = "<group>";
@@ -543,6 +574,7 @@
 				D653A4B32B841E000016F368 /* HeaderReusableView.xib in Resources */,
 				D653A4AB2B841AE10016F368 /* Poppins-Regular.ttf in Resources */,
 				D653A4A72B841AD60016F368 /* Poppins-Bold.ttf in Resources */,
+				D653A4C82B84F0730016F368 /* Home.json in Resources */,
 				D653A4912B8413600016F368 /* SearchView.xib in Resources */,
 				D660854E2B83830A0071B562 /* swiftgen.yml in Resources */,
 				D66085532B8383DB0071B562 /* Colors.xcassets in Resources */,
@@ -612,9 +644,13 @@
 			files = (
 				D66085792B8389690071B562 /* FeaturesCollectionViewCell.swift in Sources */,
 				D653A4B22B841E000016F368 /* HeaderReusableView.swift in Sources */,
+				D653A4C42B84EE800016F368 /* HomeModel.swift in Sources */,
+				D653A4C12B84EDA90016F368 /* HomeFactory.swift in Sources */,
 				D66085112B8378720071B562 /* AppDelegate.swift in Sources */,
+				D653A4C62B84F0410016F368 /* HomeViewModel.swift in Sources */,
 				D66085502B8383390071B562 /* Strings+Generated.swift in Sources */,
 				D66085632B8386390071B562 /* SectionsLayout.swift in Sources */,
+				D653A4CB2B84F1A40016F368 /* +JSONDecoder.swift in Sources */,
 				D660857C2B83897E0071B562 /* FeaturesModel.swift in Sources */,
 				D66085852B839B910071B562 /* CategoriesModel.swift in Sources */,
 				D66085922B83A3AD0071B562 /* ServiceModel.swift in Sources */,
