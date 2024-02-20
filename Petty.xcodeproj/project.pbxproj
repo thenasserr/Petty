@@ -29,6 +29,12 @@
 		D653A4D22B84FA280016F368 /* FashionCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D653A4D02B84FA280016F368 /* FashionCollectionViewCell.xib */; };
 		D653A4D42B84FCD40016F368 /* FashionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D653A4D32B84FCD40016F368 /* FashionModel.swift */; };
 		D653A4D72B8508C20016F368 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D653A4D62B8508C20016F368 /* UIView+Extension.swift */; };
+		D653A4DA2B8514190016F368 /* MartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D653A4D82B8514190016F368 /* MartViewController.swift */; };
+		D653A4DB2B8514190016F368 /* MartViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D653A4D92B8514190016F368 /* MartViewController.xib */; };
+		D653A4DE2B8516660016F368 /* MartModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D653A4DD2B8516660016F368 /* MartModel.swift */; };
+		D653A4E02B8516720016F368 /* MartViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D653A4DF2B8516720016F368 /* MartViewModel.swift */; };
+		D653A4E22B8517170016F368 /* Mart.json in Resources */ = {isa = PBXBuildFile; fileRef = D653A4E12B8517170016F368 /* Mart.json */; };
+		D653A4E52B85187B0016F368 /* MartFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = D653A4E42B85187B0016F368 /* MartFactory.swift */; };
 		D66085112B8378720071B562 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D66085102B8378720071B562 /* AppDelegate.swift */; };
 		D66085132B8378720071B562 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D66085122B8378720071B562 /* SceneDelegate.swift */; };
 		D660851A2B8378740071B562 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D66085192B8378740071B562 /* Assets.xcassets */; };
@@ -98,6 +104,12 @@
 		D653A4D02B84FA280016F368 /* FashionCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FashionCollectionViewCell.xib; sourceTree = "<group>"; };
 		D653A4D32B84FCD40016F368 /* FashionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FashionModel.swift; sourceTree = "<group>"; };
 		D653A4D62B8508C20016F368 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		D653A4D82B8514190016F368 /* MartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MartViewController.swift; sourceTree = "<group>"; };
+		D653A4D92B8514190016F368 /* MartViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MartViewController.xib; sourceTree = "<group>"; };
+		D653A4DD2B8516660016F368 /* MartModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MartModel.swift; sourceTree = "<group>"; };
+		D653A4DF2B8516720016F368 /* MartViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MartViewModel.swift; sourceTree = "<group>"; };
+		D653A4E12B8517170016F368 /* Mart.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Mart.json; sourceTree = "<group>"; };
+		D653A4E42B85187B0016F368 /* MartFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MartFactory.swift; sourceTree = "<group>"; };
 		D660850D2B8378720071B562 /* Petty.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Petty.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D66085102B8378720071B562 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D66085122B8378720071B562 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -207,6 +219,23 @@
 				D653A4D62B8508C20016F368 /* UIView+Extension.swift */,
 			);
 			path = UIView;
+			sourceTree = "<group>";
+		};
+		D653A4DC2B8516540016F368 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				D653A4DD2B8516660016F368 /* MartModel.swift */,
+				D653A4DF2B8516720016F368 /* MartViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		D653A4E32B85186A0016F368 /* Factory */ = {
+			isa = PBXGroup;
+			children = (
+				D653A4E42B85187B0016F368 /* MartFactory.swift */,
+			);
+			path = Factory;
 			sourceTree = "<group>";
 		};
 		D66085042B8378720071B562 = {
@@ -391,6 +420,11 @@
 		D660855E2B8385EB0071B562 /* Mart */ = {
 			isa = PBXGroup;
 			children = (
+				D653A4E32B85186A0016F368 /* Factory */,
+				D653A4DC2B8516540016F368 /* ViewModel */,
+				D653A4D82B8514190016F368 /* MartViewController.swift */,
+				D653A4D92B8514190016F368 /* MartViewController.xib */,
+				D653A4E12B8517170016F368 /* Mart.json */,
 			);
 			path = Mart;
 			sourceTree = "<group>";
@@ -601,6 +635,7 @@
 				D660851A2B8378740071B562 /* Assets.xcassets in Resources */,
 				D66085812B839B3C0071B562 /* CategoriesCollectionViewCell.xib in Resources */,
 				D66085902B83A2A20071B562 /* ServiceCollectionViewCell.xib in Resources */,
+				D653A4DB2B8514190016F368 /* MartViewController.xib in Resources */,
 				D660857A2B8389690071B562 /* FeaturesCollectionViewCell.xib in Resources */,
 				D653A4D22B84FA280016F368 /* FashionCollectionViewCell.xib in Resources */,
 				D653A4B32B841E000016F368 /* HeaderReusableView.xib in Resources */,
@@ -609,6 +644,7 @@
 				D653A4C82B84F0730016F368 /* Home.json in Resources */,
 				D653A4912B8413600016F368 /* SearchView.xib in Resources */,
 				D660854E2B83830A0071B562 /* swiftgen.yml in Resources */,
+				D653A4E22B8517170016F368 /* Mart.json in Resources */,
 				D66085532B8383DB0071B562 /* Colors.xcassets in Resources */,
 				D653A48D2B8411F80016F368 /* HomeViewController.xib in Resources */,
 			);
@@ -675,6 +711,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D66085792B8389690071B562 /* FeaturesCollectionViewCell.swift in Sources */,
+				D653A4DE2B8516660016F368 /* MartModel.swift in Sources */,
 				D653A4B22B841E000016F368 /* HeaderReusableView.swift in Sources */,
 				D653A4C42B84EE800016F368 /* HomeModel.swift in Sources */,
 				D653A4C12B84EDA90016F368 /* HomeFactory.swift in Sources */,
@@ -688,13 +725,16 @@
 				D66085852B839B910071B562 /* CategoriesModel.swift in Sources */,
 				D66085922B83A3AD0071B562 /* ServiceModel.swift in Sources */,
 				D66085132B8378720071B562 /* SceneDelegate.swift in Sources */,
+				D653A4E02B8516720016F368 /* MartViewModel.swift in Sources */,
 				D66085752B83894C0071B562 /* FeaturesSection.swift in Sources */,
 				D653A4922B8413600016F368 /* SearchView.swift in Sources */,
 				D66085572B8385300071B562 /* UICollectionView+Extension.swift in Sources */,
 				D66085802B839B3C0071B562 /* CategoriesCollectionViewCell.swift in Sources */,
+				D653A4DA2B8514190016F368 /* MartViewController.swift in Sources */,
 				D653A4CE2B84FA0E0016F368 /* FashionSection.swift in Sources */,
 				D653A48C2B8411F80016F368 /* HomeViewController.swift in Sources */,
 				D66085832B839B6C0071B562 /* CategoriesSection.swift in Sources */,
+				D653A4E52B85187B0016F368 /* MartFactory.swift in Sources */,
 				D653A4D42B84FCD40016F368 /* FashionModel.swift in Sources */,
 				D653A4D72B8508C20016F368 /* UIView+Extension.swift in Sources */,
 				D66085942B83A51B0071B562 /* ServiceSection.swift in Sources */,

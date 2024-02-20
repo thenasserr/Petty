@@ -1,0 +1,43 @@
+{
+    "sections": [
+        {
+            "categories":
+                    {
+                        "items": [
+                            {
+                                "image": "categories/dog",
+                                
+                            },
+                            {
+                                "image": "categories/cat",
+                                
+                            },
+                            {
+                                "image": "categories/bird",
+                                
+                            },
+                            {
+                                "image": "categories/fish",
+                                
+                            },
+                            {
+                                "image": "categories/fish",
+                                
+                            },
+                            {
+                                "image": "categories/fish",
+                                
+                            },
+                            {
+                                "image": "categories/fish",
+                                
+                            },
+                            {
+                                "image": "categories/fish",
+                                
+                            }
+                        ]
+                    }
+        }
+    ]
+}
