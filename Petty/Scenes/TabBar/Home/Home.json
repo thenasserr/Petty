@@ -140,6 +140,78 @@
                             }
                         ]
                     }
+        },
+        {
+            "fashion":
+                    {
+                        "title": "P - Food",
+                        "items": [
+                            {
+                                "image": "food/food",
+                                "description": "Fish Food",
+                                "price": "$ 20",
+                                "topColor": "ABDCFC"
+                                
+                            },
+                            {
+                                "image": "food/food2",
+                                "description": "Protein nut Food for dogs",
+                                "price": "$ 35",
+                                "topColor": "FBAE9E"
+                                
+                            },
+                            {
+                                "image": "food/food",
+                                "description": "Fish Food",
+                                "price": "$ 20",
+                                "topColor": "ABDCFC"
+                                
+                            },
+                            {
+                                "image": "food/food2",
+                                "description": "Protein nut Food for dogs",
+                                "price": "$ 35",
+                                "topColor": "FBAE9E"
+                                
+                            }
+                        ]
+                    }
+        },
+        {
+            "fashion":
+                    {
+                        "title": "P - Games",
+                        "items": [
+                            {
+                                "image": "games/game",
+                                "description": "Colorful toys for pets",
+                                "price": "$ 17",
+                                "topColor": "B1E0D8"
+                                
+                            },
+                            {
+                                "image": "games/game2",
+                                "description": "Fish toys",
+                                "price": "$ 40",
+                                "topColor": "FDD2A4"
+                                
+                            },
+                            {
+                                "image": "games/game",
+                                "description": "Colorful toys for pets",
+                                "price": "$ 17",
+                                "topColor": "B1E0D8"
+                                
+                            },
+                            {
+                                "image": "games/game2",
+                                "description": "Fish toys",
+                                "price": "$ 40",
+                                "topColor": "FDD2A4"
+                                
+                            }
+                        ]
+                    }
         }
     ]
 }

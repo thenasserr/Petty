@@ -378,9 +378,9 @@
 		D660855D2B8385E60071B562 /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				D653A4C22B84EE710016F368 /* ViewModel */,
 				D66085702B83891A0071B562 /* Factory */,
 				D660856F2B8389150071B562 /* Sections */,
+				D653A4C22B84EE710016F368 /* ViewModel */,
 				D653A48A2B8411F80016F368 /* HomeViewController.swift */,
 				D653A48B2B8411F80016F368 /* HomeViewController.xib */,
 				D653A4C72B84F0730016F368 /* Home.json */,
