@@ -15,4 +15,5 @@ enum HomeType: Codable {
     case features(items: [FeaturesModel])
     case categories(items: [CategoriesModel])
     case service(items: [ServiceModel], title: String)
+    case fashion(items: [FashionModel], title: String)
 }

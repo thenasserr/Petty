@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="FashionCollectionViewCell" customModule="Petty" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="216" height="225"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="216" height="225"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="QLf-QX-cZG">
+                        <rect key="frame" x="0.0" y="40" width="216" height="185"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Mb8-FN-oxP">
+                                <rect key="frame" x="0.0" y="0.0" width="216" height="130"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="130" id="jb1-WD-Wbe"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="OBG-1b-uyZ">
+                                <rect key="frame" x="0.0" y="130" width="216" height="55"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="pEO-Vm-Fh0">
+                                        <rect key="frame" x="0.0" y="0.0" width="216" height="18"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ekV-md-9HY">
+                                                <rect key="frame" x="0.0" y="0.0" width="41.333333333333336" height="18"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wKV-Hm-eYu">
+                                                <rect key="frame" x="198" y="0.0" width="18" height="18"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="18" id="ns3-cd-kb4"/>
+                                                    <constraint firstAttribute="width" constant="18" id="qTv-YM-qK8"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                                <connections>
+                                                    <action selector="loveButtonTapped:" destination="gTV-IL-0wX" eventType="touchUpInside" id="3dY-40-9uL"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A3f-xp-C5Q">
+                                        <rect key="frame" x="0.0" y="30" width="216" height="25"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FdG-K2-YDJ">
+                                                <rect key="frame" x="0.0" y="0.0" width="216" height="25"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                    </stackView>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="411-LA-gb8">
+                        <rect key="frame" x="0.0" y="0.0" width="216" height="170"/>
+                    </imageView>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="QLf-QX-cZG" secondAttribute="bottom" id="9vU-kW-09C"/>
+                <constraint firstItem="QLf-QX-cZG" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="40" id="A7d-wK-BrR"/>
+                <constraint firstItem="QLf-QX-cZG" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="SSk-7o-o1c"/>
+                <constraint firstItem="411-LA-gb8" firstAttribute="bottom" secondItem="Mb8-FN-oxP" secondAttribute="bottom" id="T9Y-rO-phi"/>
+                <constraint firstItem="411-LA-gb8" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="e2L-hw-0nl"/>
+                <constraint firstAttribute="trailing" secondItem="QLf-QX-cZG" secondAttribute="trailing" id="q6C-R8-KZN"/>
+                <constraint firstItem="411-LA-gb8" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="qbv-o2-H9s"/>
+                <constraint firstAttribute="trailing" secondItem="411-LA-gb8" secondAttribute="trailing" id="ukx-qe-oXc"/>
+            </constraints>
+            <size key="customSize" width="216" height="182"/>
+            <connections>
+                <outlet property="bottomView" destination="OBG-1b-uyZ" id="eyJ-PZ-5ir"/>
+                <outlet property="containerView" destination="QLf-QX-cZG" id="9fh-fl-IJG"/>
+                <outlet property="descriptionLabel" destination="FdG-K2-YDJ" id="8iN-ZK-lm7"/>
+                <outlet property="loveButton" destination="wKV-Hm-eYu" id="4FM-4R-3cq"/>
+                <outlet property="petImage" destination="411-LA-gb8" id="Slx-kX-j8m"/>
+                <outlet property="priceLabel" destination="ekV-md-9HY" id="ETW-UY-GLU"/>
+                <outlet property="topView" destination="Mb8-FN-oxP" id="tpz-Q1-SpG"/>
+            </connections>
+            <point key="canvasLocation" x="167.93893129770993" y="73.591549295774655"/>
+        </collectionViewCell>
+    </objects>
+</document>

@@ -104,6 +104,42 @@
                             }
                         ]
                     }
+        },
+        {
+            "fashion":
+                    {
+                        "title": "P - Fashion",
+                        "items": [
+                            {
+                                "image": "fashion/petfashion",
+                                "description": "Colorful capes for parrots",
+                                "price": "$ 170",
+                                "topColor": "BBB7EA"
+                                
+                            },
+                            {
+                                "image": "fashion/petfashion2",
+                                "description": "Colorful capes for parrots",
+                                "price": "$ 200",
+                                "topColor": "FDD2A4"
+                                
+                            },
+                            {
+                                "image": "fashion/petfashion",
+                                "description": "Colorful capes for parrots",
+                                "price": "$ 170",
+                                "topColor": "BBB7EA"
+                                
+                            },
+                            {
+                                "image": "fashion/petfashion2",
+                                "description": "Colorful capes for parrots",
+                                "price": "$ 170",
+                                "topColor": "BBB7EA"
+                                
+                            }
+                        ]
+                    }
         }
     ]
 }

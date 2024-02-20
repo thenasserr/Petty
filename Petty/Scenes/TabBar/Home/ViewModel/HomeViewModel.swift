@@ -7,7 +7,7 @@
 
 import Foundation
 
-typealias HomeSectionsDelegate = FeaturesSectionDelegate & CategoriesSectionDelegate & ServiceSectionDelegate
+typealias HomeSectionsDelegate = FeaturesSectionDelegate & CategoriesSectionDelegate & ServiceSectionDelegate & FashionSectionDelegate
 
 class HomeViewModel {
     let homeModel: HomeModel? = JSONDecoder().decode(forResource: "Home")
@@ -24,6 +24,10 @@ class HomeViewModel {
 }
 
 extension HomeViewModel: HomeSectionsDelegate {
+    func fashionSection(_ section: FashionSection, item: FashionModel) {
+        
+    }
+    
     func featuresSection(_ section: FeaturesSection, item: FeaturesModel) {
         
     }

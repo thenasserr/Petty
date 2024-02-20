@@ -22,6 +22,8 @@ class HomeFactory {
                 return CategoriesSection(items: items, delegate: delegate)
             case .service(items: let items, title: let title):
                 return ServiceSection(items: items, delegate: delegate, headerTitle: title)
+            case .fashion(items: let items, title: let title):
+                return FashionSection(items: items, delegate: delegate, headerTitle: title)
         }
     }
 }
