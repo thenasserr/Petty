@@ -9,11 +9,14 @@ import UIKit
 
 class HomeViewController: UIViewController {
 
+    @IBOutlet weak var headerView: UIStackView!
+    @IBOutlet weak var headerStackViewHeightConstraints: NSLayoutConstraint!
     @IBOutlet weak var filterButton: UIButton!
     @IBOutlet weak var logoImage: UIImageView!
     @IBOutlet weak var collectionView: UICollectionView!
     
     var sections: [any SectionsLayout] = []
+    private var headerViewHeight: CGFloat = 0
 
     // MARK: - View Lifecycle
     //
@@ -26,13 +29,13 @@ class HomeViewController: UIViewController {
         let categorySection = CategoriesSection()
         categorySection.items = CategoriesModel.mockData
         
-        let section1 = MultiSection()
+        let section1 = ServiceSection()
         section1.headerTitle = "Education"
-        section1.items = MultiModel.mockData1
+        section1.items = ServiceModel.mockData1
         
-        let service = MultiSection()
+        let service = ServiceSection()
         service.headerTitle = "Service"
-        service.items = MultiModel.mockData2
+        service.items = ServiceModel.mockData2
         
         sections = [headerSection, categorySection, section1, service]
         configureCollectionView()
@@ -105,5 +108,18 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
     
     func collectionView(_ collectionView: UICollectionView, didUnhighlightItemAt indexPath: IndexPath) {
         sections[indexPath.section].collectionView(collectionView, didUnhighlightItemAt: indexPath)
+    }
+    
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        animateHeaderStackView(with: scrollView.contentOffset.y)
+    }
+    
+    private func animateHeaderStackView(with offsetY: CGFloat) {
+        if offsetY <= 0.0 {
+            headerStackViewHeightConstraints.constant = 80
+        } else {
+            headerStackViewHeightConstraints.constant = 80 - offsetY
+        }
+        self.view.layoutIfNeeded()
     }
 }

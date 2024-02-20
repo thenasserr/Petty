@@ -42,10 +42,10 @@
 		D66085812B839B3C0071B562 /* CategoriesCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D660857F2B839B3C0071B562 /* CategoriesCollectionViewCell.xib */; };
 		D66085832B839B6C0071B562 /* CategoriesSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = D66085822B839B6C0071B562 /* CategoriesSection.swift */; };
 		D66085852B839B910071B562 /* CategoriesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D66085842B839B910071B562 /* CategoriesModel.swift */; };
-		D660858F2B83A2A20071B562 /* MultiCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D660858D2B83A2A20071B562 /* MultiCollectionViewCell.swift */; };
-		D66085902B83A2A20071B562 /* MultiCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D660858E2B83A2A20071B562 /* MultiCollectionViewCell.xib */; };
-		D66085922B83A3AD0071B562 /* MultiModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D66085912B83A3AD0071B562 /* MultiModel.swift */; };
-		D66085942B83A51B0071B562 /* MultiSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = D66085932B83A51B0071B562 /* MultiSection.swift */; };
+		D660858F2B83A2A20071B562 /* ServiceCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D660858D2B83A2A20071B562 /* ServiceCollectionViewCell.swift */; };
+		D66085902B83A2A20071B562 /* ServiceCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D660858E2B83A2A20071B562 /* ServiceCollectionViewCell.xib */; };
+		D66085922B83A3AD0071B562 /* ServiceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D66085912B83A3AD0071B562 /* ServiceModel.swift */; };
+		D66085942B83A51B0071B562 /* ServiceSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = D66085932B83A51B0071B562 /* ServiceSection.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -105,10 +105,10 @@
 		D660857F2B839B3C0071B562 /* CategoriesCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoriesCollectionViewCell.xib; sourceTree = "<group>"; };
 		D66085822B839B6C0071B562 /* CategoriesSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesSection.swift; sourceTree = "<group>"; };
 		D66085842B839B910071B562 /* CategoriesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesModel.swift; sourceTree = "<group>"; };
-		D660858D2B83A2A20071B562 /* MultiCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiCollectionViewCell.swift; sourceTree = "<group>"; };
-		D660858E2B83A2A20071B562 /* MultiCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MultiCollectionViewCell.xib; sourceTree = "<group>"; };
-		D66085912B83A3AD0071B562 /* MultiModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiModel.swift; sourceTree = "<group>"; };
-		D66085932B83A51B0071B562 /* MultiSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiSection.swift; sourceTree = "<group>"; };
+		D660858D2B83A2A20071B562 /* ServiceCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceCollectionViewCell.swift; sourceTree = "<group>"; };
+		D660858E2B83A2A20071B562 /* ServiceCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ServiceCollectionViewCell.xib; sourceTree = "<group>"; };
+		D66085912B83A3AD0071B562 /* ServiceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceModel.swift; sourceTree = "<group>"; };
+		D66085932B83A51B0071B562 /* ServiceSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceSection.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -417,10 +417,10 @@
 		D660858C2B83A2820071B562 /* MultiSection */ = {
 			isa = PBXGroup;
 			children = (
-				D660858D2B83A2A20071B562 /* MultiCollectionViewCell.swift */,
-				D660858E2B83A2A20071B562 /* MultiCollectionViewCell.xib */,
-				D66085912B83A3AD0071B562 /* MultiModel.swift */,
-				D66085932B83A51B0071B562 /* MultiSection.swift */,
+				D660858D2B83A2A20071B562 /* ServiceCollectionViewCell.swift */,
+				D660858E2B83A2A20071B562 /* ServiceCollectionViewCell.xib */,
+				D66085912B83A3AD0071B562 /* ServiceModel.swift */,
+				D66085932B83A51B0071B562 /* ServiceSection.swift */,
 			);
 			path = MultiSection;
 			sourceTree = "<group>";
@@ -538,7 +538,7 @@
 				D653A4AD2B841AE40016F368 /* Poppins-SemiBold.ttf in Resources */,
 				D660851A2B8378740071B562 /* Assets.xcassets in Resources */,
 				D66085812B839B3C0071B562 /* CategoriesCollectionViewCell.xib in Resources */,
-				D66085902B83A2A20071B562 /* MultiCollectionViewCell.xib in Resources */,
+				D66085902B83A2A20071B562 /* ServiceCollectionViewCell.xib in Resources */,
 				D660857A2B8389690071B562 /* FeaturesCollectionViewCell.xib in Resources */,
 				D653A4B32B841E000016F368 /* HeaderReusableView.xib in Resources */,
 				D653A4AB2B841AE10016F368 /* Poppins-Regular.ttf in Resources */,
@@ -617,7 +617,7 @@
 				D66085632B8386390071B562 /* SectionsLayout.swift in Sources */,
 				D660857C2B83897E0071B562 /* FeaturesModel.swift in Sources */,
 				D66085852B839B910071B562 /* CategoriesModel.swift in Sources */,
-				D66085922B83A3AD0071B562 /* MultiModel.swift in Sources */,
+				D66085922B83A3AD0071B562 /* ServiceModel.swift in Sources */,
 				D66085132B8378720071B562 /* SceneDelegate.swift in Sources */,
 				D66085752B83894C0071B562 /* FeaturesSection.swift in Sources */,
 				D653A4922B8413600016F368 /* SearchView.swift in Sources */,
@@ -625,10 +625,10 @@
 				D66085802B839B3C0071B562 /* CategoriesCollectionViewCell.swift in Sources */,
 				D653A48C2B8411F80016F368 /* HomeViewController.swift in Sources */,
 				D66085832B839B6C0071B562 /* CategoriesSection.swift in Sources */,
-				D66085942B83A51B0071B562 /* MultiSection.swift in Sources */,
+				D66085942B83A51B0071B562 /* ServiceSection.swift in Sources */,
 				D660855A2B8385580071B562 /* UITableView+Extension.swift in Sources */,
 				D653A4AF2B841B9C0016F368 /* Fonts.swift in Sources */,
-				D660858F2B83A2A20071B562 /* MultiCollectionViewCell.swift in Sources */,
+				D660858F2B83A2A20071B562 /* ServiceCollectionViewCell.swift in Sources */,
 				D653A4B62B8433320016F368 /* UIColor+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
