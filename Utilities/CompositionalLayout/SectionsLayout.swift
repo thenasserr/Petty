@@ -34,4 +34,8 @@ protocol SectionsLayout {
     func registerSupplementaryView(in collectionView: UICollectionView)
     
     func registerDecorationView(layout: UICollectionViewLayout)
+    
+    func collectionView(_ collectionView: UICollectionView, didHighlightItemAt indexPath: IndexPath)
+    
+    func collectionView(_ collectionView: UICollectionView, didUnhighlightItemAt indexPath: IndexPath)
 }
