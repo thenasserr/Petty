@@ -9,4 +9,5 @@ import Foundation
 
 struct CategoriesModel: Codable {
     let image: String
+    let title: String
 }

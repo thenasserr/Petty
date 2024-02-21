@@ -32,13 +32,13 @@ class CategoriesSection: SectionsLayout {
         layoutEnvironment: NSCollectionLayoutEnvironment
     ) -> NSCollectionLayoutSection {
         // Item
-        let itemSize = NSCollectionLayoutSize(widthDimension: .absolute(54), heightDimension: .fractionalHeight(1))
+        let itemSize = NSCollectionLayoutSize(widthDimension: .absolute(65), heightDimension: .fractionalHeight(1))
         let item = NSCollectionLayoutItem(layoutSize: itemSize)
         
         // Group
-        let groupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1), heightDimension: .absolute(64))
+        let groupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1), heightDimension: .absolute(84))
         let group = NSCollectionLayoutGroup.horizontal(layoutSize: groupSize, subitem: item, count: 4)
-        group.interItemSpacing = .fixed(32)
+        group.interItemSpacing = .fixed(20)
         
         let header = createHeader()
         

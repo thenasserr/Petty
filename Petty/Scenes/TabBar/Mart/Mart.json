@@ -5,36 +5,36 @@
                     {
                         "items": [
                             {
-                                "image": "categories/dog",
-                                
+                                "image": "mart/food",
+                                "title": "Food"
                             },
                             {
-                                "image": "categories/cat",
-                                
+                                "image": "mart/game",
+                                "title": "Game"
                             },
                             {
-                                "image": "categories/bird",
-                                
+                                "image": "mart/clothes",
+                                "title": "Clothes"
                             },
                             {
-                                "image": "categories/fish",
-                                
+                                "image": "mart/care",
+                                "title": "Care"
                             },
                             {
-                                "image": "categories/fish",
-                                
+                                "image": "mart/walk",
+                                "title": "Walk"
                             },
                             {
-                                "image": "categories/fish",
-                                
+                                "image": "mart/medical",
+                                "title": "Medical"
                             },
                             {
-                                "image": "categories/fish",
-                                
+                                "image": "mart/home",
+                                "title": "Kennel"
                             },
                             {
-                                "image": "categories/fish",
-                                
+                                "image": "mart/other",
+                                "title": "Others"
                             }
                         ]
                     }

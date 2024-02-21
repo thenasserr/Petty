@@ -44,19 +44,22 @@
                         "items": [
                             {
                                 "image": "categories/dog",
+                                "title": ""
                                 
                             },
                             {
                                 "image": "categories/cat",
+                                "title": ""
                                 
                             },
                             {
                                 "image": "categories/bird",
+                                "title": ""
                                 
                             },
                             {
                                 "image": "categories/fish",
-                                
+                                "title": ""
                             }
                         ]
                     }

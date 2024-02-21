@@ -50,7 +50,7 @@ class MartViewController: UIViewController {
     
     private func configureUI() {
         view.backgroundColor = .pMainTheme
-        logoImage.image = .mart
+        logoImage.image = .martlogo
     }
 
     // MARK: - Compositional Layout
